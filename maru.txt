@@ -691,7 +691,7 @@ QuestNeta = function()
 end
 
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local Window = Fluent:CreateWindow({Title = "Nghiadepzai Hub [Version:V2]",SubTitle = "| By ⚡Bau36⚡",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "Dark",MinimizeKey = Enum.KeyCode.End})
+local Window = Fluent:CreateWindow({Title = "Banana Hub Old Menu [Version:V1]",SubTitle = "| By ⚡nghiadepzai⚡",TabWidth = 155,Size = UDim2.fromOffset(555, 320),Acrylic = false,Theme = "Dark",MinimizeKey = Enum.KeyCode.End})
 
 local CoreGui = game:GetService("CoreGui")
 local VirtualInputManager = game:GetService("VirtualInputManager")
@@ -708,7 +708,7 @@ ToggleButton.Position = UDim2.new(0.15, 0, 0.15, 0)
 ToggleButton.BackgroundColor3 = Color3.fromRGB(30,30,30) -- nền cho tròn rõ
 ToggleButton.BackgroundTransparency = 0
 ToggleButton.BorderSizePixel = 0
-ToggleButton.Image = "rbxassetid://103065107597683"
+ToggleButton.Image = "rbxassetid://5009915795"
 ToggleButton.ScaleType = Enum.ScaleType.Crop -- FIX TRÒN CHUẨN
 ToggleButton.Parent = ScreenGui
 
@@ -758,20 +758,20 @@ UserInputService.InputEnded:Connect(function(input)
     end
 end)
 local Tabs = {
-  Shop = Window:AddTab({Title = "Cửa Hàng", Icon = "shopping-cart"}),
-  Combat = Window:AddTab({Title = "Thuộc Người Chơi", Icon = "user"}),
-  Settings = Window:AddTab({Title = "Cài Đặt", Icon = "rbxassetid://7734053495"}),
-  Main = Window:AddTab({Title = "Cày", Icon = "home"}),
-  Melee = Window:AddTab({Title = "Võ Thuật", Icon = "rbxassetid://11162889532"}),
-  Quests = Window:AddTab({Title = "Vật Phẩm Cày", Icon = "rbxassetid://13075622619"}),
-  SeaEvent = Window:AddTab({Title = "Biển", Icon = "rbxassetid://10709783577"}),
-  Mirage = Window:AddTab({Title = "Đảo Bí Ẩn/V4", Icon = "rbxassetid://11162889532"}),
-  Drago = Window:AddTab({Title = "Võ Đường Drago", Icon = "layers"}),
-  Prehistoric = Window:AddTab({Title = "Núi Lửa", Icon = "flame"}),
-  Raids = Window:AddTab({Title = "Đột Kích", Icon = "skull"}),
-  Travel = Window:AddTab({Title = "Dịch Chuyển", Icon = "map-pin"}),
-  Fruit = Window:AddTab({Title = "Trái", Icon = "cherry"}),
-  Misc = Window:AddTab({Title = "Khác", Icon = "rbxassetid://6031280882"})
+  Shop = Window:AddTab({Title = "Shop", Icon = "shopping-cart"}),
+  Combat = Window:AddTab({Title = "Player", Icon = "user"}),
+  Settings = Window:AddTab({Title = "Settings", Icon = "rbxassetid://7734053495"}),
+  Main = Window:AddTab({Title = "Farms", Icon = "home"}),
+  Melee = Window:AddTab({Title = "Melee", Icon = "rbxassetid://11162889532"}),
+  Quests = Window:AddTab({Title = "Items", Icon = "rbxassetid://13075622619"}),
+  SeaEvent = Window:AddTab({Title = "Sea Event", Icon = "rbxassetid://10709783577"}),
+  Mirage = Window:AddTab({Title = "Mirage/Race", Icon = "rbxassetid://11162889532"}),
+  Drago = Window:AddTab({Title = "Drago Race", Icon = "layers"}),
+  Prehistoric = Window:AddTab({Title = "Prehistoric Island", Icon = "flame"}),
+  Raids = Window:AddTab({Title = "Raid", Icon = "skull"}),
+  Travel = Window:AddTab({Title = "Teleport", Icon = "map-pin"}),
+  Fruit = Window:AddTab({Title = "Fruits", Icon = "cherry"}),
+  Misc = Window:AddTab({Title = "Other", Icon = "rbxassetid://6031280882"})
 }
  
 local FarmLevel = Tabs.Main:AddToggle("FarmLevel", {Title = "Auto Farm Level", Description = "", Default = false})
